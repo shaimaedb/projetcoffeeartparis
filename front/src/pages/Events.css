@@ -1,0 +1,252 @@
+.events-container {
+  width: 100%;
+  background-color: #F4EFEA;
+  overflow: hidden;
+}
+
+/* Bannière */
+.events-banner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(135deg, #909B82 0%, #E2D1B9 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.events-banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(60, 56, 53, 0.5);
+}
+
+.events-banner-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #F4EFEA;
+  padding: 2rem;
+}
+
+.events-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 1px;
+}
+
+.events-subtitle {
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Contenu */
+.events-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.events-intro {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.events-intro h2 {
+  font-size: 2.2rem;
+  color: #3C3835;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.events-intro p {
+  font-size: 1.05rem;
+  color: #9A9591;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Grille d'événements */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.event-card {
+  background: #FFFFFF;
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(60, 56, 53, 0.08);
+  transition: all 0.3s ease;
+  border-left: 5px solid #909B82;
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(60, 56, 53, 0.15);
+}
+
+.event-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.event-category {
+  background: linear-gradient(135deg, #909B82 0%, #E2D1B9 100%);
+  color: #FFFFFF;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
+}
+
+.event-date {
+  color: #9A9591;
+  font-weight: 500;
+  font-family: 'Outfit', sans-serif;
+}
+
+.event-title {
+  font-size: 1.3rem;
+  color: #3C3835;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.event-details {
+  background: #F4EFEA;
+  padding: 1.2rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.event-details p {
+  margin: 0.5rem 0;
+  color: #3C3835;
+  font-size: 0.9rem;
+  font-family: 'Outfit', sans-serif;
+}
+
+.event-details p:first-child {
+  margin-top: 0;
+}
+
+.event-description {
+  color: #9A9591;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.95rem;
+}
+
+.event-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid #E2D1B9;
+}
+
+.event-price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #909B82;
+  font-family: 'Outfit', sans-serif;
+}
+
+.btn-register {
+  background: linear-gradient(135deg, #909B82 0%, #E2D1B9 100%);
+  color: #FFFFFF;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.btn-register:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(144, 155, 130, 0.3);
+}
+
+/* CTA */
+.events-cta {
+  background: linear-gradient(135deg, #3C3835 0%, #9A9591 100%);
+  color: #FFFFFF;
+  padding: 3rem;
+  border-radius: 24px;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.events-cta h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-family: 'Outfit', sans-serif;
+}
+
+.events-cta p {
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Outfit', sans-serif;
+}
+
+.btn-cta {
+  background: #FFFFFF;
+  color: #3C3835;
+  border: none;
+  padding: 0.9rem 2rem;
+  border-radius: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.btn-cta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .events-title {
+    font-size: 2.2rem;
+  }
+
+  .events-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .events-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .events-cta {
+    padding: 2rem 1.5rem;
+  }
+
+  .events-cta h3 {
+    font-size: 1.3rem;
+  }
+}

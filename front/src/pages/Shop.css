@@ -1,0 +1,349 @@
+.shop-container {
+  width: 100%;
+  background-color: #F4EFEA;
+  overflow: hidden;
+}
+
+/* Bannière */
+.shop-banner {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  background: linear-gradient(135deg, #3C3835 0%, #9A9591 100%);
+  background-image: url('/PRODUIT 1 - PARTIE 1.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.shop-banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(60, 56, 53, 0.6);
+}
+
+.shop-banner-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #F4EFEA;
+  padding: 2rem;
+}
+
+.shop-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 1px;
+}
+
+.shop-subtitle {
+  font-size: 1.2rem;
+  font-weight: 300;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Contenu principal */
+.shop-content {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.shop-intro {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.shop-intro h2 {
+  font-size: 2.2rem;
+  color: #3C3835;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.shop-intro p {
+  font-size: 1.05rem;
+  color: #9A9591;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Filtres */
+.filters-section {
+  margin-bottom: 4rem;
+}
+
+.filters-title {
+  font-size: 1.1rem;
+  color: #3C3835;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.filters-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: #FFFFFF;
+  border: 2px solid #E2D1B9;
+  color: #3C3835;
+  padding: 0.8rem 2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  border-color: #909B82;
+  color: #909B82;
+}
+
+.filter-btn.active {
+  background: linear-gradient(135deg, #909B82 0%, #E2D1B9 100%);
+  border-color: transparent;
+  color: #FFFFFF;
+}
+
+/* Grille de produits */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.product-card {
+  background: #FFFFFF;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(60, 56, 53, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 35px rgba(60, 56, 53, 0.15);
+}
+
+.product-badges {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  z-index: 10;
+}
+
+.badge {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: 'Outfit', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-new {
+  background: #909B82;
+  color: #FFFFFF;
+}
+
+.product-image {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #E2D1B9 0%, #F4EFEA 100%);
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.1);
+}
+
+.product-info {
+  padding: 1.8rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-name {
+  font-size: 1.1rem;
+  color: #3C3835;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  margin: 0 0 0.8rem 0;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  color: #9A9591;
+  line-height: 1.5;
+  margin: 0 0 1.5rem 0;
+  flex: 1;
+  font-family: 'Outfit', sans-serif;
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid #E2D1B9;
+}
+
+.product-price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #909B82;
+  font-family: 'Outfit', sans-serif;
+}
+
+.btn-add-cart {
+  background: linear-gradient(135deg, #909B82 0%, #E2D1B9 100%);
+  color: #FFFFFF;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  font-family: 'Outfit', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.btn-add-cart:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 15px rgba(144, 155, 130, 0.3);
+}
+
+/* Panier */
+.cart-section {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(226, 209, 185, 0.2) 0%, rgba(144, 155, 130, 0.1) 100%);
+  border-radius: 20px;
+  margin-bottom: 3rem;
+}
+
+.cart-count {
+  font-size: 1.2rem;
+  color: #3C3835;
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+}
+
+/* Footer boutique */
+.shop-footer-section {
+  background: linear-gradient(135deg, #3C3835 0%, #9A9591 100%);
+  color: #FFFFFF;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: 'Outfit', sans-serif;
+}
+
+.footer-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: 'Outfit', sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footer-content strong {
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .shop-title {
+    font-size: 2.3rem;
+  }
+
+  .shop-subtitle {
+    font-size: 1rem;
+  }
+
+  .shop-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .product-image {
+    height: 200px;
+  }
+
+  .filter-btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .filters-grid {
+    gap: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .shop-title {
+    font-size: 1.8rem;
+  }
+
+  .shop-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .filters-grid {
+    flex-direction: column;
+  }
+
+  .filter-btn {
+    width: 100%;
+  }
+}

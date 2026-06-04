@@ -1,0 +1,289 @@
+:root {
+  --bg-cream: #F4EFEA;
+  --text-dark: #3C3835;
+  --btn-beige-color: #E2D1B9;
+  --sage-green: #909B82;
+  --taupe-gray: #9A9591;
+}
+
+.home-container {
+  font-family: 'Outfit', sans-serif;
+  color: var(--text-dark);
+  background-color: var(--bg-cream);
+  overflow-x: hidden;
+}
+
+/* --- Style Hero avec Vidéo de Fond --- */
+.hero-section {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25); /* Assombrit légèrement la vidéo pour lire le texte */
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 800px;
+  color: var(--bg-cream);
+}
+
+.hero-title {
+  font-size: 4.2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: -1px;
+}
+
+.hero-subtitle {
+  font-size: 1.8rem;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.hero-description {
+  font-size: 1.3rem;
+  max-width: 650px;
+  margin: 0 auto 20px auto;
+  line-height: 1.5;
+}
+
+.hero-address {
+  font-size: 1.05rem;
+  margin-bottom: 35px;
+  letter-spacing: 0.5px;
+}
+
+.hero-buttons, .cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* --- Boutons --- */
+.btn {
+  padding: 14px 35px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-beige {
+  background-color: var(--btn-beige-color);
+  color: var(--text-dark);
+}
+
+.btn-outline-white {
+  background-color: transparent;
+  color: var(--bg-cream);
+  border: 1px solid var(--bg-cream);
+}
+
+.btn-green {
+  background-color: var(--sage-green);
+  color: white;
+}
+
+/* --- Sections Titres --- */
+.section-title-main {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+
+.section-subtitle-main {
+  text-align: center;
+  font-size: 1.15rem;
+  color: #706863;
+  margin-bottom: 45px;
+}
+
+/* --- Grid Expériences --- */
+.experiences-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.exp-card {
+  height: 480px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.card-img-wrapper {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: transform 0.4s ease;
+}
+
+.exp-card:hover .card-img-wrapper {
+  transform: scale(1.03);
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 35px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.75));
+  color: white;
+}
+
+.card-overlay span {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+.card-overlay h3 {
+  font-size: 1.9rem;
+  margin: 5px 0 15px 0;
+}
+
+.card-link {
+  color: white;
+  font-size: 0.95rem;
+  text-decoration: underline;
+}
+
+/* --- Mosaïque d'ambiance --- */
+.ambiance-mosaic {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mosaic-item {
+  height: 320px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+
+/* --- Nouveautés Produits --- */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.news-card {
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+}
+
+.news-img-container {
+  background-color: #F9F9F9;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news-img {
+  max-width: 100%;
+  height: 260px;
+  object-fit: contain;
+}
+
+.news-info {
+  padding: 25px;
+}
+
+.news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.news-header h4 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.price-tag {
+  background: #f0ebe4;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.news-info p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.view-more {
+  color: var(--text-dark);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* --- CTA Banner --- */
+.cta-banner {
+  text-align: center;
+  padding: 90px 20px;
+  background-color: white;
+  margin-top: 100px;
+}
+
+.cta-banner h2 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+}
+
+.cta-banner p {
+  color: #666;
+  margin-bottom: 35px;
+  font-size: 1.15rem;
+}
